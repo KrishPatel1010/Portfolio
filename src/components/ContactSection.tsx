@@ -6,14 +6,14 @@ const CONTACTS = [
   {
     icon: Mail,
     label: "Email",
-    value: "janedoe@email.com",
-    url: "mailto:janedoe@email.com"
+    value: "krishpatel8463@gmail.com",
+    url: "mailto:krishpatel8463@gmail.com"
   },
   {
     icon: LinkIcon,
     label: "LinkedIn",
     value: "linkedin.com/in/janedoe",
-    url: "https://www.linkedin.com/"
+    url: "https://www.linkedin.com/in/patel-krish-72a625250/"
   }
 ];
 

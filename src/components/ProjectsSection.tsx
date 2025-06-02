@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "UI Component Library",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
-    description: "A collection of reusable React components, beautifully themed and accessible.",
-    link: "https://github.com/",
+    title: "Crypto-Tracker",
+    image: "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
+    description: "A real-time cryptocurrency tracker leveraging reusable React components, WebSocket-powered live updates, and a modern, responsive UI.",
+    link: "https://krishpatel1010.github.io/Crypto-Tracker/",
   },
   {
     title: "Personal Blog",
