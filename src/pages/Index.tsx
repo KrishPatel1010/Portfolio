@@ -110,19 +110,19 @@ const Index = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center"
+        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6"
       >
         {/* Background Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
             Frontend Developer
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in delay-300">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 animate-fade-in delay-300">
             Creating beautiful digital experiences with modern technologies
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-500">
@@ -143,20 +143,20 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6">
+      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             About Me
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-4 sm:mb-6">
                 I'm a frontend developer experienced in building responsive,
                 real-time apps with React, Tailwind CSS, and Redux. I'm now
                 learning backend development with Node.js to become a full-stack
                 developer.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6 sm:mb-8">
                 I specialize in React, Redux, and Tailwind CSS, while exploring
                 TypeScript and Node.js to become a full-stack developer. I'm
                 always eager to learn and push the limits of web development.
@@ -181,9 +181,9 @@ const Index = () => {
                 ))}
               </div>
             </div>
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full flex items-center justify-center">
-                <div className="w-60 h-60 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full pulse-glow"></div>
+            <div className="relative mt-8 md:mt-0">
+              <div className="w-48 h-48 sm:w-80 sm:h-80 mx-auto bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full flex items-center justify-center">
+                <div className="w-36 h-36 sm:w-60 sm:h-60 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full pulse-glow"></div>
               </div>
             </div>
           </div>
@@ -191,12 +191,12 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-gray-900/50">
+      <section id="projects" className="py-12 sm:py-20 px-4 sm:px-6 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -209,11 +209,11 @@ const Index = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-white">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-white">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
+                  <p className="text-sm sm:text-base text-gray-400 mb-4">{project.description}</p>
                   <a
                     href={project.link}
                     target="_blank"
@@ -230,19 +230,19 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Let's Work Together
           </h2>
-          <p className="text-xl text-gray-300 mb-12">
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12">
             Ready to bring your ideas to life? Let's create something amazing
             together.
           </p>
-          <div className="flex justify-center gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             <a
               href="mailto:krishpatel8463@gmail.com"
-              className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:scale-105 transition-transform"
+              className="flex items-center justify-center gap-3 px-6 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:scale-105 transition-transform"
             >
               <Mail size={20} />
               Email Me
