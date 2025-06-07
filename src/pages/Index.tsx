@@ -11,7 +11,7 @@ const Index = () => {
         "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
       description:
         "A real-time cryptocurrency tracker leveraging reusable React components, WebSocket-powered live updates, and a modern, responsive UI.",
-      link: "https://krishpatel1010.github.io/Crypto-Tracker/",
+      link: "https://krishpatel1010.github.io/Crypto-Tracker/index.html",
     },
     {
       title: "Trivia Quiz App",
